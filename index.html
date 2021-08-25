@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>T</title>
+</head>
+<body>
+<script>
+    // Viết một chương trình JavaScript để tìm một giá tri được nhập vào từ hộp thoại
+    // có nằm trong mảng hay không. Nếu có in ra vị trí của phần tử đó.
+    let value = prompt("enter a number:")
+    value = parseInt(value)
+    let numbers = [-3, -5, 6, 7, 5, 14];
+
+    // Dùng vòng lặp duyệt toàn bộ mảng x. Kiểm tra nếu một phần tử trong mảng x
+    // bằng giá trị được nhập vào thì hiển thị thông báo
+    for (let i = 0; i < numbers.length; i++) {
+        if (value === numbers[i]) {
+            alert("value " + numbers[i] + " found at " + i);
+        }
+    }
+</script>
+</body>
+</html>
